@@ -1,0 +1,158 @@
+.phone {
+	color: red;
+}
+
+#xlx ul li a:hover {
+	color: red;
+	opacity: 0.7;
+}
+
+.active {
+	color: grey;
+}
+
+#dh a {
+	font-size: 16px;
+	color: darkslategrey;
+}
+
+#dh li {
+	margin-right: 20px;
+	margin-top: 7px;
+}
+
+li {
+	list-style: none;
+}
+
+#dh ul li:hover .user,
+#dh ul li ul li:hover .yen {
+	color: red;
+	opacity: 0.8;
+}
+
+.zhuce {
+	font-size: 18px;
+}
+
+.button {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+	background-color: red;
+	opacity: 0.6;
+	text-align: center;
+}
+
+.button:hover {
+	opacity: 0.7;
+}
+
+.button a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu {
+	margin-top: 50px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: grey;
+	font-size: 15px;
+}
+
+footer {
+	width: 100%;
+	height: 120px;
+	margin: auto;
+}
+
+footer span {
+	color: dimgray;
+	font-family: "微软雅黑";
+	font-size: 2px;
+	margin-left: 8px;
+	line-height: 30px;
+}
+
+footer span a {
+	text-decoration: none;
+	color: dimgray;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+.left {
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+	height: 630px;
+}
+
+.lefttou {
+	height: 35px;
+	line-height: 35px;
+	color: red;
+	opacity: 0.8;
+	font-size: 18px;
+	margin-left: 50px;
+	
+}
+
+.lefttou a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.lefttou span {
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	width: 1px;
+	background-color: gray;
+}
+
+.leftnav {
+	height: 630px;
+	border-top: 1px;
+	padding-top: 5px;
+	background: ghostwhite;
+}
+
+.leftnav li {
+	width: 90%;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 10px;
+	list-style: none;
+
+}
+
+.leftnav li:hover {
+	opacity: 0.8;
+	background-color:crimson;
+}
+
+.leftnav li a {
+	display: block;
+	text-decoration: none;
+	color:darkslategrey;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.leftnav li a:hover {
+	color:whitesmoke;
+	
+}

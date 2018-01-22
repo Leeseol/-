@@ -1,0 +1,394 @@
+!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>和信贷-注册</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" />
+		<script src="bootstrap-3.3.4-dist/js/jquery-1.11.3.js"></script>
+		<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+		<script>
+			function jsusername() {
+				var username = document.getElementById("username").value;
+				if(username == "") {
+					document.getElementById("spanusername").innerHTML = "用户名不能为空！";
+					document.getElementById("username").focus();
+				} else {
+					if(username.length < 6) {
+						document.getElementById("spanusername").innerHTML = "用户名长度大于6";
+						document.getElementById("username").focus();
+					} else {
+						document.getElementById("spanusername").style.color = "green";
+						document.getElementById("spanusername").innerHTML = "<font style='color:green'>√</font>";;
+					}
+
+				}
+
+			}
+
+			function jsuserpwd() {
+				var userpwd = document.getElementById("userpwd").value;
+				if(userpwd == "") {
+					document.getElementById("spanpwd").innerHTML = "密码不能为空";
+					document.getElementById("userpwd").focus();
+				} else {
+					if(userpwd.length < 3) {
+						document.getElementById("spanpwd").innerHTML = "密码长度大于3";
+						document.getElementById("userpwd").focus();
+					} else {
+						document.getElementById("spanpwd").style.color = "green";
+						document.getElementById("spanpwd").innerHTML = "<font style='color:green'>√</font>";
+					}
+
+				}
+
+			}
+
+			function jsconpwd() {
+				var pwd = document.getElementById("pwd").value;
+				if(pwd == "") {
+					document.getElementById("spanpwds").innerHTML = "密码不能为空！";
+					document.getElementById("pwd").focus();
+				} else {
+					if(pwd.length < 3) {
+						document.getElementById("spanpwds").innerHTML = "密码长度大于3";
+						document.getElementById("pwd").focus();
+					} else {
+						var userpwd = document.getElementById("userpwd").value;
+						if(pwd != userpwd) {
+							document.getElementById("spanpwds").innerHTML = "<font style='color:red'>请确认与设置密码相同</font>";
+							document.getElementById("pwd").focus();
+						} else {
+							document.getElementById("spanpwds").style.color = "green";
+							document.getElementById("spanpwds").innerHTML = "<font style='color:green'>√</font>";
+						}
+					}
+				}
+
+			}
+
+			function jsuseremail() {
+				var email = document.getElementById("useremail").value;
+				if(email.indexOf("@") == -1) {
+					document.getElementById("spanuseremail").innerHTML = "邮箱格式不正确";
+					document.getElementById("useremail").focus();
+				} else {
+					document.getElementById("spanuseremail").innerHTML = "<font style='color:green'>√</font>";
+				}
+			}
+		</script>
+		<style type="text/css">
+			.phone {
+				color: red;
+			}
+			
+			#xlx ul li a:hover {
+				color: red;
+				opacity: 0.7;
+			}
+			
+			.active {
+				color: grey;
+			}
+			
+			#dh a {
+				font-size: 16px;
+				color: darkslategrey;
+			}
+			
+			#dh li {
+				margin-right: 20px;
+				margin-top: 7px;
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			#dh ul li:hover .user,
+			#dh ul li ul li:hover .yen {
+				color: red;
+				opacity: 0.8;
+			}
+			.zhuce{
+				font-size: 18px;
+			}
+			.button {
+				width: 100%;
+				height: 40px;
+				line-height: 40px;
+				margin: auto;
+				background-color: red;
+				opacity: 0.8;
+				text-align: center;
+				border-radius: 10px;
+			}
+			
+			.button:hover {
+				opacity: 0.9;
+			}
+			
+			.button a {
+				text-decoration: none;
+				color: white;
+			}
+			footer {
+				width: 100%;
+				height: 120px;
+				
+				margin: auto;
+			}
+			
+			footer span {
+				color: dimgray;
+				font-family: "微软雅黑";
+				font-size: 2px;
+				margin-left: 8px;
+				line-height: 30px;
+			}
+			
+			footer span a {
+				text-decoration: none;
+				color: dimgray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+				<!--<div class="container-fluid">-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dh">
+    				<span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+    		        </button>
+					<a class="navbar-brand" href="#">Hi,欢迎来到和信贷</a>
+				</div>
+				<div class="collapse navbar-collapse" id="xlx">
+					<ul class="nav navbar-nav navbar-left">
+
+						<li>
+							<a href="#">请登录</a>
+						</li>
+						<li>
+							<a href="#">免费注册</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">VIP会员</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<a href="#">帮助中心</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-phone phone"></span>手机</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/1.png" />微信</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-earphone phone"></span>400-004-6000</a>
+						</li>
+					</ul>
+				</div>				
+				<div class="collapse navbar-collapse" id="dh" style="background-color: white;">
+					<ul class="nav navbar-nav">
+
+						<li>
+							<img class="img-responsive" src="img/2.png" style="margin-top: -7px;" />
+						</li>
+						<li>
+							<a href="index.html">
+								<font style="color:red;opacity: 0.8;">首页</font>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">我要出借<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#">荷包</a>
+								</li>
+								<li>
+									<a href="#">散标</a>
+								</li>
+								<li>
+									<a href="#">债权转让</a>
+								</li>
+								<li>
+									<a href="ruhechujie.html">如何出借</a>
+								</li>
+								<li>
+									<a href="income.html">收益计算</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">我要借款</a>
+						</li>
+						<li>
+							<a href="xinshouzhiyin.html">新手指引</a>
+						</li>
+						<li>
+							<a href="#">安全保障</a>
+						</li>
+						<li>
+							<a href="information.html">信息披露</a>
+						</li>
+						<li class="active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user user"></span>我的账户<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-yen yen"></span>资金管理</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-paste yen"></span>出借管理</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-piggy-bank yen"></span>借款管理</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-cog yen"></span>个人设置</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="container-fluid" style="width: 80%;margin-top:150px;background-image: url(img/bg.png);">
+				<div class="zhuce" style="margin-top: 25px;">用户注册</div>
+				<hr color="lightgray" size="3"/>
+				<form role="form" style="width: 70%;margin: auto;margin-top: 50px;">
+					<div class="input-group">
+						<label for="username" class="input-group-addon">用户名：<span id="spanusername" style="color: red;"></span></label>
+						<input type="text" id="username" name="username" placeholder="请输入用户名" class="form-control" onblur="jsusername()" />
+					</div><br />
+					<div class="input-group"  style="margin-top: 10px;">
+						<label for="pwd1" class="input-group-addon">密码：<span id="spanpwd" style="color: red;"></span></label>
+						<input type="password" id="userpwd" name="userpwd" placeholder="请输入密码" class="form-control" onblur="jsuserpwd()" />
+					</div><br />
+					<div class="input-group"  style="margin-top: 10px;">
+						<label for="pwd2" class="input-group-addon">确认密码：<span id="spanpwds" style="color: red;"></span></label>
+						<input type="password" id="pwd" name="pwd" placeholder="请再次输入密码" class="form-control" onblur="jsconpwd()" />
+					</div><br />
+					<div class="input-group"  style="margin-top: 10px;">
+						<label for="email" class="input-group-addon">邮箱：<span id="spanuseremail" style="color: red;"></span></label>
+						<input type="email" id="useremail" name="useremail" placeholder="请输入邮箱" class="form-control" onblur="jsuseremail()" />
+					</div><br />
+					<div class="input-group"  style="margin-top: 10px;">
+						<label for="phote" class="input-group-addon">上传照片：</label>
+						<input type="file" id="phot" name="photo" class="form-control" />
+					</div><br />
+					<div class="input-group"  style="margin-top: 10px;">
+						<label for="exampleInputFile" class="input-group-addon">性别：</label>
+						<select class="form-control">
+							<option>男</option>
+							<option>女</option>
+						</select>
+					</div><br />
+					<div class="input-group"  style="margin-top: 10px;">
+						<label for="hobby" class="input-group-addon">爱好：</label>
+						<ul class="nav nav-tabs nav-justified nav-pills">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">运动<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">足球</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">篮球</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">艺术<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">钢琴</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">吉他</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">吃饭<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">饺子</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">年糕</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div><br />
+					<div class="input-group"  style="margin-top: 10px;">
+						<label for="xieyi" class="input-group-addon">用户协议：</label>
+						<textarea class="form-control" disabled id="disabledInput" type="text">
+     					和信在此特别提醒用户认真阅读、充分理解本《软件许可及服务协议》（下称《协议》）--- 用户应认真阅读、充分理解本《协议》中各条款，特别涉及免除或者限制腾讯责任的免责条款，对用户的权利限制的条款，约定争议解决方式、司法管辖、法律适用的条款。请您审慎阅读并选择接受或不接受本《协议》（未成年人应在法定监护人陪同下阅读）。除非您接受本《协议》所有条款，否则您无权下载、安装或使用本软件及其相关服务。您的下载、安装、使用、帐号获取和登录等行为将视为对本《协议》的接受，并同意接受本《协议》各项条款的约束。
+     				</textarea>
+					</div><br />					
+					<div class="button" style="width: 60%;color: white;font-size: 17px;margin-top: 20px;float: left;">注册领1000元代金券</div>
+					<button type="reset" class="btn btn-primary" style="width: 10%;margin-top: 20px;float: right;">重置</button>
+				</form>
+			</div>
+			<footer>
+				<div class="container-fluid" style="margin-top: 80px;width: 90%;">
+				<div class="dibu" style="width: 100%;">
+					<div id="m0" style="width: 70%;float: left;">
+						<span>|</span><span><a href="index.html">江西银行</a></span>
+						<span>|</span><span><a href="index.html">长安责任保险</a></span>
+						<span>|</span><span><a href="index.html">CFCA</a></span>
+						<span>|</span><span><a href="index.html">隆安律师事务所</a></span>
+						<span>|</span><span><a href="index.html">BJPPTP</a></span>
+						<span>|</span><span><a href="index.html">互联网金融</a></span>
+						<span>|</span><span><a href="index.html">网贷之家</a></span>
+						<span>|</span><span><a href="index.html">网贷天眼</a></span>
+						<span>|</span><span><a href="index.html">网贷家门</a></span>						
+						<span>|</span><span><a href="index.html">网&nbsp;贷排名</a></span>
+						<span>|</span><span><a href="index.html">第一网贷</a></span>
+						<span>|</span><span><a href="index.html">外汇牌价</a></span>
+						<span>|</span><span><a href="index.html">p2p网贷系统</a></span>
+						<span>|</span><span><a href="index.html">阿里贷款</a></span>
+						<span>|</span><span><a href="index.html">前瞻数据</a></span>
+						<span>|</span><span><a href="index.html">站长资讯</a></span>
+						<span>|</span><span><a href="index.html">广发网上银行</a></span>	
+					</div>
+                    <div id="m1" style="width: 30%;float: left;text-align: center;">
+                    	<img src="img/ma1.png" style="margin-left: 10px;"/><img src="img/ma2.png" style="margin-left: 30px;"/>
+                    </div>
+				</div>
+				<hr size="1" color="dimgray" />
+				<span><a href="index.html">关于淘宝</a></span>
+				<span><a href="index.html">合作伙伴</a></span>
+				<span><a href="index.html">营销中心</a></span>
+				<span><a href="index.html">廉政举报</a></span>
+				<span><a href="index.html">联系客服</a></span>
+				<span><a href="index.html">开放平台</a></span>
+				<span><a href="index.html">诚征英才</a></span>
+				<span><a href="index.html">联系我们</a></span>
+				<span><a href="index.html">网站地图</a></span>
+				<span><a href="index.html">网站声明及隐私政策</a></span>
+				<span><a href="index.html">知识产权</a></span>
+				<span><a href="index.html">诚征英才</a></span><span>|</span>
+				<span><a>© 2003-2017 Taobao.com 版权所有</a></span><br />
+				<span>网络文化经营许可证：<a>浙网文[2013]0268-027号</a></span>
+				<span>增值电信业务经营许可证：<a>浙B2-20080224</a></span>
+				<span>信息网络传播视听节目许可证：<a>1109364号</a></span><br />
+				<span>互联网违法和不良信息举报电话:0571-81683755 blxx@list.alibaba-inc.com</span>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

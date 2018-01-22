@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="bootstrap-3.3.4-dist/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#down").click(function() {
+					$(".div1").slideDown(1000);
+				});
+				$("#up").click(function() {
+					$(".div1").slideUp(1000);
+				});
+			});
+		</script>
+		<style type="text/css">
+			.nr li {
+				list-style: none;
+				height: 35px;
+				line-height: 35px;
+				width: 100%
+			}
+			
+			.nr li a:hover {
+				cursor: pointer;
+				color: palevioletred;
+			}
+			
+			.nr {
+				color: darkslategray;
+			}
+			
+			.div1 {
+				width: 100%;
+				height: 180px;
+				display: none;
+				background-color: gainsboro;
+			}
+			.div1 li{
+				font-size: 13px;
+			}
+			#up {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="ma" style="width: 100%;">
+			<hr />
+			<div class="ding" style="width: 100%;height: 60px;">
+				<h3><img src="img/chujie.png"/>关于如何出借</h3>
+			</div>
+			<div class="nr" style="width: 100%;">
+				<ul>
+					<li>
+						<a id="down">① 出借流程是什么？</a><span id="up">&uArr;</span>
+					</li>
+					<div class="div1">
+						<ol>
+							<li>
+								1、注册并登录和信贷，成功开通存管账户后，点击【我要出借】进入债权列表页面。
+							</li>
+							<li>
+								2、选择合适的借款项目并点击【立即出借】进入借款项目详情页，查看项目详情并填写出借金额，点击【立即出借】。</li>
+							<li>
+								3、如需使用代金券，在弹窗处勾选可用代金券，点击【确定】。
+							</li>
+							<li>
+								4、提交出借申请至江西银行，进入江西银行输入交易密码，出借申请成功。
+							</li>
+						</ol>
+					</div>
+					<li>
+						<a>② 如何加入荷包？</a>
+					</li>
+					<li>
+						<a>③ 如何签订《复投签约协议》和《债转签约协议》？</a>
+					</li>
+					<li>
+						<a>④ 如何查看项目？</a>
+					</li>
+					<li>
+						<a>⑤ 如何查看出借记录？</a>
+					</li>
+					<li>
+						<a>⑥ 如何下载电子协议？</a>
+					</li>
+
+					<li>
+						<a>⑦ 电子协议下载不了怎么办？</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

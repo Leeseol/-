@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>和信贷官网-您的理财首选</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/flipsternavtabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.flipster.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css "/>
+		<script src="bootstrap-3.3.4-dist/js/jquery-1.11.3.js"></script>
+		<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+		<script>
+			function dl() {
+				document.getElementById('dlb').style.display = 'block';
+				document.getElementById('dlbg').style.display = 'block';
+			}
+
+			function dlclose() {
+				document.getElementById('dlb').style.display = 'none';
+				document.getElementById('dlbg').style.display = 'none';
+			}
+		</script>		
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+				<!--<div class="container-fluid">-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dh">
+    				<span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+    		        </button>
+					<a class="navbar-brand" href="#">Hi,欢迎来到和信贷</a>
+				</div>
+				<div class="collapse navbar-collapse" id="xlx">
+					<ul class="nav navbar-nav navbar-left">
+
+						<li>
+							<a href="#" onclick="dl()">请登录</a>
+						</li>
+						<li>
+							<a href="register.html">免费注册</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">VIP会员</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<a href="#">帮助中心</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-phone phone"></span>手机</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/1.png" />微信</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-earphone phone"></span>400-004-6000</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--<div class="navbar-header ">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dh">
+    				<span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+    		        </button>
+
+				</div>-->
+				<div class="collapse navbar-collapse" id="dh" style="background-color: white;">
+					<ul class="nav navbar-nav">
+
+						<li>
+							<img class="img-responsive" src="img/2.png" style="margin-top: -7px;" />
+						</li>
+						<li>
+							<a href="#">
+								<font style="color:red;opacity: 0.8;">首页</font>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">我要出借<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#">荷包</a>
+								</li>
+								<li>
+									<a href="#">散标</a>
+								</li>
+								<li>
+									<a href="#">债权转让</a>
+								</li>
+								<li>
+									<a href="ruhechujie.html">如何出借</a>
+								</li>
+								<li>
+									<a href="income.html">收益计算</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">我要借款</a>
+						</li>
+						<li>
+							<a href="xinshouzhiyin.html">新手指引</a>
+						</li>
+						<li>
+							<a href="#">安全保障</a>
+						</li>
+						<li>
+							<a href="information.html">信息披露</a>
+						</li>
+						<li class="active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user user"></span>我的账户<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-yen yen"></span>资金管理</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-paste yen"></span>出借管理</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-piggy-bank yen"></span>借款管理</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-cog yen"></span>个人设置</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!--弹窗		-->
+
+		<div id="dlb">
+			<div class="neibu">
+				<div><img src="img/dl.png" style="width: 100%;" /></div>
+				<div class="container-fluid">
+					<div class="zhuce" style="margin-top: 25px;float: left;">登陆</div>
+					<div class="zcba">
+						<a href="#" class="guanbi" onclick="dlclose()">&times;</a>
+					</div>
+					<hr color="lightgray" size="3" />
+					<form role="form">
+						<div class="input-group">
+							<label for="username" class="input-group-addon"><span class="glyphicon glyphicon-user "></span><span id="spanusername" style="color: red;"></span></label>
+							<input type="text" id="username" name="username" placeholder="手机号/用户名" class="form-control" onblur="jsusername()" />
+						</div><br />
+						<div class="input-group">
+							<label for="pwd1" class="input-group-addon"><span class="glyphicon glyphicon-lock "></span><span id="spanpwd" style="color: red;"></span></label>
+							<input type="password" id="userpwd" name="userpwd" placeholder="密码" class="form-control" onblur="jsuserpwd()" />
+						</div><br />
+						<div class="input-group">
+							<label for="phote" class="input-group-addon"><span class="glyphicon glyphicon-apple "></span></label>
+							<input type="text" id="phot" name="photo" placeholder="验证码" class="form-control" style="width: 40%;height:60px;" />
+							<img src="img/veryCode.gif" style="width: 40%;" />&nbsp;&nbsp;
+							<a href="#">换一张</a>
+						</div><br />
+						<div class="button" style="width: 70%;color: white;font-size: 17px;margin-top: 20px;">登陆</div>
+						<div class="container" style="width: 100%;">
+							<ul class="pager">
+								<li class="previous">
+									<a href="register.html">立即注册</a>
+								</li>
+								<li class="next">
+									<a href="#">忘记密码？</a>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="width: 90%;margin-top:50px;background-image: url(img/bg.png);">
+			<div class="row3" style="width: 100%;">
+				<div class="col-lg-12 col-md-12 col-sm-12 ">
+					<h2 style="text-align: center;color: darkslategray;"><strong>3年积淀&nbsp;和信信誉</strong></h2>
+					<div class="flipster">
+
+						<ul>
+							<li>
+								<img src="img/honer01.jpg" />
+							</li>
+							<li>
+								<img src="img/honer02.jpg" />
+							</li>
+							<li>
+								<img src="img/honer03.jpg" />
+							</li>
+							<li>
+								<img src="img/honer04.jpg" />
+							</li>
+							<li>
+								<img src="img/honer05.jpg" />
+							</li>
+							<li>
+								<img src="img/honer06.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.flipster.js"></script>
+		<script>
+			$(function() {
+				$(".flipster").flipster({
+					style: 'carousel',
+					start: 0
+				});
+			});
+		</script>
+		<!--<div class="dlbb"></div>
+
+		
+		<div id="lb" class="carousel slide" data-ride="carousel" style="width:90%;margin: auto;margin-top: 50px;" data-interval="3000">
+			
+			<ol class="carousel-indicators">
+				<li data-target="#lb" data-slide-to="0" class="active"></li>
+				<li data-target="#lb" data-slide-to="1"></li>
+				<li data-target="#lb" data-slide-to="2"></li>
+				<li data-target="#lb" data-slide-to="3"></li>
+				<li data-target="#lb" data-slide-to="4"></li>
+			</ol>
+
+			
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/13.png" alt="1" style="width:100%;height:450px">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="img/5.png" alt="2" style="width:100%;height:450px">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="img/4.png" alt="2" style="width:100%;height:450px">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="img/3.png" alt="3" style="width:100%;height:450px">
+					<div class="carousel-caption"></div>
+				</div>
+				<div class="item">
+					<img src="img/6.png" alt="4" style="width:100%;height:450px">
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
+
+			
+			<a class="left carousel-control" href="#lb" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#lb" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>-->
+		<div class="container-fluid" style="width: 90%;">
+			<div class="row1" style="margin-top: 10px;">
+				<div class="col-md-2 col-sm-4 col-xs-12  s1">
+					<img src="img/7.png" alt="通用的占位符缩略图" style="float: left;margin-top: 10px;" />
+					<h5>成交总金额 </h5>
+					<p>108亿3171万元</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12  s1">
+					<img src="img/8.png" alt="通用的占位符缩略图" style="float: left;margin-top: 10px;" />
+					<h5>出借人总收益</h5>
+					<p>3亿6876万元</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12 s1">
+					<img src="img/9.png" alt="通用的占位符缩略图" style="float: left;margin-top: 10px;" />
+					<h5>安全运营</h5>
+					<p>1345天</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12  s1">
+					<img src="img/10.png" alt="通用的占位符缩略图" style="float: left;margin-top: 10px;" />
+					<h5>注册人数</h5>
+					<p>1049443人</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12  s1">
+					<h5>数据来源和信贷内部统计，实时更新 </h5>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12 s1">
+					<a href="#">
+						<h5>查看详情 </h5></a>
+				</div>
+			</div>
+		</div>
+		<!--2hang-->
+		<div class="jumbotron">
+			<div class="container-fluid" style="width: 90%;background-image: url(img/bg.png);">
+				<div class="row2" style="margin-top: 10px;width: 90%; ">
+					<div class="col-md-3 col-sm-6 col-xs-12 ">
+						<div class="th">
+							<div id="pic" style="float: left;width: 35%;">
+								<img src="img/11.png" alt="通用的占位符缩略图" style="margin-top: 10px;" />
+							</div>
+							<div id="wenzi" style="float: left;width: 65%;">
+								<p>银行存管 资金有保障</p>
+								<p>电子合同数据可查验</p>
+								<p>北京网贷协会创始会员</p>
+								<p>金融认证中心合作企业</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 ">
+						<div class="th">
+							<div id="pic" style="float: left;width: 35%;">
+								<img src="img/12.png" alt="通用的占位符缩略图" style="margin-top: 10px;" />
+							</div>
+							<div id="wenzi" style="float: left;width: 65%;">
+								<p>专业分散智能 省时省力省心</p>
+								<p>50元起投 收益佳超开心</p>
+								<p>风控严格 风险低超安心</p>
+								<p>快捷灵活 智能化超放心</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 ">
+						<div class="th">
+							<div class="title">
+								<ul>
+									<li>
+										<font style="font-size: 18px;">最新公告</font>
+									</li>
+									<li>
+										<a href="http://www.hexindai.com/dynamic/newsdetail-NID_2694.html">新版代金券使用说明</a>
+									</li>
+									<li>
+										<a href="http://www.hexindai.com/dynamic/newsdetail-NID_2633.html">【和信贷】新手指引大全</a>
+									</li>
+									<li>
+										<a href="http://www.hexindai.com/dynamic/newsdetail-NID_2313.html">邀好友拿1%出借现金奖励啦！</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 ">
+						<div class="th">
+							<span class="more">
+								<ul>
+									<li><a href="/dynamic/news.html"> 更多&gt;</a></li>
+								    <li><span>2017.03.02</span></li>
+							        <li><span>2017.01.06</span></li>
+							        <li><span>2016.07.27</span></li>
+							    </ul>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top: 20px;width: 90%;background-image: url(img/bg.png);">
+			<div class="row3" style="margin-top: 10px;width: 90%;">
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con1">
+						<img src="img/xinshou.png" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12  ">
+					<div class="con1" style="padding-top: 50px;color: darkslategrey;">
+						<h5>预期年化收益率</h5>
+						<h1><font style="color: red;opacity: 0.8;size: 20px;padding-left: 25px;">8%</font><span class="reward" style="color: red;opacity: 0.8;">+<em>7<i>%</i></em><span>奖励</span></span></h1>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12  ">
+					<div class="con1" style="padding-top: 60px;">
+						<ul class="novice-info">
+							<li class="spb">
+								<font style="color:grey;">借款总额</font>&nbsp;&nbsp;<strong><font style="color: darkslategrey;font-size: 17px;">50万</font></strong></li>
+							<li class="spb">
+								<font style="color:grey;">项目期限</font>&nbsp;&nbsp;<strong><font style="color: darkslategrey;font-size: 17px;">1个月</font></strong></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con1" style="padding-top: 40px;color: darkslategrey;">
+						<p style="font-size: 15px;margin: auto;">进度：<span class="progress-now" style="color: cornflowerblue;font-size: 20px;">60%</span></p>
+						<div class="progress">
+							<div class="progress-bar" data-width="50%" style="width: 60%;height: 20%;"></div>
+						</div>
+						<div class="button">
+							<a href="#">立即加入</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top: 20px;width: 90%;background-image: url(img/bg.png);">
+			<div class="row4" style="margin-top: 10px;width: 90%;">
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con2">
+						<i>01</i>
+						<h3><font style="color: cornflowerblue;">完成注册认证</font></h3>
+						<j>即送1000元代金券</j>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con2">
+						<i>02</i>
+						<h3><font style="color: cornflowerblue;">完成充值</font></h3>
+						<j>即刻使用代金券</j>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con2">
+						<i>03</i>
+						<h3><font style="color: cornflowerblue;">成功出借</font></h3>
+						<j>首次出借专享15%新手标</j>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con2">
+						<i>04</i>
+						<h3><font style="color: cornflowerblue;">坐享收益</font></h3>
+						<j>现金奖励收入囊中</j>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top: 20px;width: 90%;background-image: url(img/bg.png);">
+			<div class="row5" style="margin-top: 10px;width: 90%;">
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con3">
+						<img src="img/hebao.png" />
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con3" style="padding-top: 60px;">
+						<h4><a href="/packages/5816" class="pushstate"  style="color: darkslategray;font-size: 20px;">荷包APL05505</a></h4>
+						<h1><font style="color: red;opacity: 0.8;size: 20px;">8%</font></h1>
+						<p>锁定期限：9个月</p>
+						<div class="button">
+							<a href="#">立即加入</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con3" style="padding-top: 60px;">
+						<h4><a href="/packages/5819" class="pushstate"  style="color: darkslategray;font-size: 20px;">荷包APL05508</a></h4>
+						<h1><font style="color: red;opacity: 0.8;size: 20px;">14%</font></h1>
+						<p>锁定期限：24个月</p>
+						<div class="button">
+							<a href="#">立即加入</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con3" style="padding-top: 20px;">
+						<div class="container" style="margin-left:180px;">
+							<a href="#"> 更多&gt;</a>
+						</div>
+						<h4><a href="/packages/5820" class="pushstate" style="color: darkslategray;font-size: 20px;">【月返】荷包APL05509</a></h4>
+						<h1><font style="color: red;opacity: 0.8;size: 20px;">13%</font></h1>
+						<p>锁定期限：18个月</p>
+						<div class="button">
+							<a href="#">立即加入</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top: 20px;width: 90%;background-image: url(img/bg.png);">
+			<div class="row6" style="margin-top: 10px;width: 90%;">
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con">
+						<img src="img/tuijian.png" style="height: 100%;">
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-6 col-xs-12 ">
+					<div class="table-responsive">
+						<table class="table  table-hover table-striped table-condensed">
+							<tr height="20%" style="color:grey;font-size: 16px;">
+								<td width="30%" align="center">借款标题</td>
+								<td width="20%" align="center">预期年化收益率</td>
+								<td width="20%" align="center">借款期限</td>
+								<td width="20%" align="center">还款方式</td>
+								<td width="30%" align="right">
+									<a href="#"> 更多&gt;</a>
+								</td>
+							</tr>
+							<tr height="20%" style="background-color:lightsteelblue;opacity: 0.7;color: black;">
+								<td width="30%" align="center">【车贷】资金周转</td>
+								<td width="20%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">3个月</td>
+								<td width="20%" align="center">每月还息到期还本</td>
+								<td width="30%" align="center"><button class="btn btn-danger" style="width: 100%;">立即出借</button></td>
+							</tr>
+							<tr height="20%" style="background-color:lightsteelblue;opacity: 0.7;color: black;">
+								<td width="30%" align="center">【车贷】资金周转</td>
+								<td width="20%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">3个月</td>
+								<td width="20%" align="center">每月还息到期还本</td>
+								<td width="30%" align="center"><button class="btn btn-danger" style="width: 100%;">立即出借</button></td>
+							</tr>
+							<tr height="20%" style="background-color:white;opacity: 0.7;color: black;">
+								<td width="30%" align="center">【车贷】资金周转</td>
+								<td width="20%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">3个月</td>
+								<td width="20%" align="center">每月还息到期还本</td>
+								<td width="30%" align="center"><button class="btn btn-danger" style="width: 100%;">立即出借</button></td>
+							</tr>
+							<tr height="20%" style="background-color:lightsteelblue;opacity: 0.7;color: black;">
+								<td width="30%" align="center">【车贷】资金周转</td>
+								<td width="20%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">3个月</td>
+								<td width="20%" align="center">每月还息到期还本</td>
+								<td width="30%" align="center"><button class="btn btn-default" style="width: 100%;">还款中</button></td>
+							</tr>
+							<tr height="20%" style="background-color:white;opacity: 0.7;color: black;">
+								<td width="30%" align="center">【车贷】资金周转</td>
+								<td width="20%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">3个月</td>
+								<td width="20%" align="center">每月还息到期还本</td>
+								<td width="30%" align="center"><button class="btn btn-default" style="width: 100%;">还款中</button></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top: 20px;width: 90%;background-image: url(img/bg.png);">
+			<div class="row6" style="margin-top: 10px;width: 90%;">
+				<div class="col-md-3 col-sm-6 col-xs-12 ">
+					<div class="con">
+						<img src="img/zhaiquan.png" />
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-6 col-xs-12 ">
+					<div class="table-responsive">
+						<table class="table  table-hover table-striped table-condensed">
+							<tr height="20%" style="color:grey;font-size: 16px;">
+								<td width="20%" align="center">借款标题</td>
+								<td width="20%" align="center">年化收益率</td>
+								<td width="10%" align="center">待收金额</td>
+								<td width="10%" align="center">转让金额</td>
+								<td width="10%" align="center">剩余/总期数</td>
+								<td width="30%" align="right">
+									<a href="#"> 更多&gt;</a>
+								</td>
+							</tr>
+							<tr height="20%" style="background-color:lightsteelblue;opacity: 0.7;color: black;">
+								<td width="20%" align="center">【车贷】资金周转</td>
+								<td width="20%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="10%" align="center">30450</td>
+								<td width="10%" align="center">30000</td>
+								<td width="10%" align="center">2/3</td>
+								<td width="30%" align="center"><button class="btn btn-danger" style="width: 100%;">去承接</button></td>
+							</tr>
+							<tr height="20%" style="background-color:white;opacity: 0.7;color: black;">
+								<td width="20%" align="center">【车贷】资金周转</td>
+								<td width="10%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">30450</td>
+								<td width="20%" align="center">30000</td>
+								<td width="10%" align="center">2/3</td>
+								<td width="20%" align="center"><button class="btn btn-danger" style="width: 100%;">去承接</button></td>
+							</tr>
+							<tr height="20%" style="background-color:lightsteelblue;opacity: 0.7;color: black;">
+								<td width="20%" align="center">【车贷】资金周转</td>
+								<td width="10%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">30450</td>
+								<td width="20%" align="center">30000</td>
+								<td width="10%" align="center">2/3</td>
+								<td width="20%" align="center"><button class="btn btn-default" style="width: 100%;">已转让</button></td>
+							</tr>
+							<tr height="20%" style="background-color:white;opacity: 0.7;color: black;">
+								<td width="20%" align="center">【车贷】资金周转</td>
+								<td width="10%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">30450</td>
+								<td width="20%" align="center">30000</td>
+								<td width="10%" align="center">2/3</td>
+								<td width="20%" align="center"><button class="btn btn-danger" style="width: 100%;">去承接</button></td>
+							</tr>
+							<tr height="20%" style="background-color:lightsteelblue;opacity: 0.7;color: black;">
+								<td width="20%" align="center">【车贷】资金周转</td>
+								<td width="10%" align="center">
+									<font style="color: red;font-size: 20px;">9%</font>
+								</td>
+								<td width="20%" align="center">30450</td>
+								<td width="20%" align="center">30000</td>
+								<td width="10%" align="center">2/3</td>
+								<td width="20%" align="center"><button class="btn btn-default" style="width: 100%;">已转让</button></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<div class="container-fluid" style="margin-top: 50px;width: 90%;">
+				<div class="dibu" style="width: 100%;">
+					<div id="m0" style="width: 70%;float: left;">
+						<span>|</span><span><a href="index.html">江西银行</a></span>
+						<span>|</span><span><a href="index.html">长安责任保险</a></span>
+						<span>|</span><span><a href="index.html">CFCA</a></span>
+						<span>|</span><span><a href="index.html">隆安律师事务所</a></span>
+						<span>|</span><span><a href="index.html">BJPPTP</a></span>
+						<span>|</span><span><a href="index.html">互联网金融</a></span>
+						<span>|</span><span><a href="index.html">网贷之家</a></span>
+						<span>|</span><span><a href="index.html">网贷天眼</a></span>
+						<span>|</span><span><a href="index.html">网贷家门</a></span>
+						<span>|</span><span><a href="index.html">网&nbsp;贷排名</a></span>
+						<span>|</span><span><a href="index.html">第一网贷</a></span>
+						<span>|</span><span><a href="index.html">外汇牌价</a></span>
+						<span>|</span><span><a href="index.html">p2p网贷系统</a></span>
+						<span>|</span><span><a href="index.html">阿里贷款</a></span>
+						<span>|</span><span><a href="index.html">前瞻数据</a></span>
+						<span>|</span><span><a href="index.html">站长资讯</a></span>
+						<span>|</span><span><a href="index.html">广发网上银行</a></span>
+					</div>
+					<div id="m1" style="width: 30%;float: left;text-align: center;">
+						<img src="img/ma1.png" style="margin-left: 10px;" /><img src="img/ma2.png" style="margin-left: 30px;" />
+					</div>
+				</div>
+				<hr size="1" color="dimgray" />
+				<span><a href="index.html">关于淘宝</a></span>
+				<span><a href="index.html">合作伙伴</a></span>
+				<span><a href="index.html">营销中心</a></span>
+				<span><a href="index.html">廉政举报</a></span>
+				<span><a href="index.html">联系客服</a></span>
+				<span><a href="index.html">开放平台</a></span>
+				<span><a href="index.html">诚征英才</a></span>
+				<span><a href="index.html">联系我们</a></span>
+				<span><a href="index.html">网站地图</a></span>
+				<span><a href="index.html">网站声明及隐私政策</a></span>
+				<span><a href="index.html">知识产权</a></span>
+				<span><a href="index.html">诚征英才</a></span><span>|</span>
+				<span><a>© 2003-2017 Taobao.com 版权所有</a></span><br />
+				<span>网络文化经营许可证：<a>浙网文[2013]0268-027号</a></span>
+				<span>增值电信业务经营许可证：<a>浙B2-20080224</a></span>
+				<span>信息网络传播视听节目许可证：<a>1109364号</a></span><br />
+				<span>互联网违法和不良信息举报电话:0571-81683755 blxx@list.alibaba-inc.com</span>
+			</div>
+		</footer>
+
+		</div>
+
+	</body>
+
+</html>

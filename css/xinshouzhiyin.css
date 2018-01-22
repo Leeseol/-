@@ -1,0 +1,113 @@
+.phone {
+	color: red;
+}
+
+#xlx ul li a:hover {
+	color: red;
+	opacity: 0.7;
+}
+
+.active {
+	color: grey;
+}
+
+#dh a {
+	font-size: 16px;
+	color: darkslategrey;
+}
+
+#dh li {
+	margin-right: 20px;
+	margin-top: 7px;
+}
+
+li {
+	list-style: none;
+}
+
+#dh ul li:hover .user,
+#dh ul li ul li:hover .yen {
+	color: red;
+	opacity: 0.8;
+}
+
+.zhuce {
+	font-size: 18px;
+}
+
+.button {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	background-color: red;
+	opacity: 0.8;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.button:hover {
+	opacity: 0.9;
+}
+
+.button a {
+	text-decoration: none;
+	color: white;
+}
+
+.row5 {
+	margin: auto;
+	width: 90%;
+}
+
+.row5 p {
+	font-size: 15px;
+	color: gray;
+	text-align: center;
+}
+
+.row5 h1,
+.row5 h4 {
+	text-align: center;
+}
+
+.row5 a {
+	text-decoration: none;
+}
+
+.con {
+	height: 250px;
+	width: 220px;
+	background-color: papayawhip;
+	margin-top: 80px;
+	padding-top: 30px;
+	border-radius: 15px;
+	transition: all 2s;
+	border: 1px solid peachpuff;
+}
+
+.con:hover {
+	box-shadow: 10px 10px 10px peachpuff inset, -10px -10px 10px peachpuff inset, 10px -10px 10px gainsboro inset, -10px 10px 10px gainsboro inset;
+	margin-top: 50px;
+	
+	
+}
+
+footer {
+	width: 100%;
+	height: 120px;
+	margin: auto;
+}
+
+footer span {
+	color: dimgray;
+	font-family: "微软雅黑";
+	font-size: 2px;
+	margin-left: 8px;
+	line-height: 30px;
+}
+
+footer span a {
+	text-decoration: none;
+	color: dimgray;
+}
